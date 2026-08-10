@@ -7,7 +7,7 @@ require (
 	github.com/grafana/authlib/claims v0.0.0-20240827210201-19d5347dd8dd
 	github.com/grafana/grafana/pkg/apimachinery v0.0.0-20240701135906-559738ce6ae1
 	github.com/prometheus/client_golang v1.20.0
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.11.1
 	go.opentelemetry.io/otel/trace v1.29.0
 	k8s.io/apimachinery v0.31.0
 	k8s.io/apiserver v0.31.0
