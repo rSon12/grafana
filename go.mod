@@ -1,6 +1,6 @@
 module github.com/grafana/grafana
 
-go 1.23.0
+go 1.26.0
 
 // contains openapi encoder fixes. remove ASAP
 replace cuelang.org/go => github.com/grafana/cue v0.0.0-20230926092038-971951014e3f // @grafana/grafana-as-code
@@ -56,7 +56,7 @@ require (
 	github.com/go-ldap/ldap/v3 v3.4.4 // @grafana/identity-access-team
 	github.com/go-openapi/loads v0.22.0 // @grafana/alerting-backend
 	github.com/go-openapi/runtime v0.28.0 // @grafana/alerting-backend
-	github.com/go-openapi/strfmt v0.23.0 // @grafana/alerting-backend
+	github.com/go-openapi/strfmt v0.27.2 // @grafana/alerting-backend
 	github.com/go-redis/redis/v8 v8.11.5 // @grafana/grafana-backend-group
 	github.com/go-sourcemap/sourcemap v2.1.3+incompatible // @grafana/grafana-backend-group
 	github.com/go-sql-driver/mysql v1.8.1 // @grafana/grafana-search-and-storage
@@ -81,7 +81,7 @@ require (
 	github.com/grafana/cuetsy v0.1.11 // @grafana/grafana-as-code
 	github.com/grafana/dataplane/examples v0.0.1 // @grafana/observability-metrics
 	github.com/grafana/dataplane/sdata v0.0.9 // @grafana/observability-metrics
-	github.com/grafana/dskit v0.0.0-20240311184239-73feada6c0d7 // @grafana/grafana-backend-group
+	github.com/grafana/dskit v0.0.0-20240805174438-dfa83b4ed2d3 // @grafana/grafana-backend-group
 	github.com/grafana/gofpdf v0.0.0-20231002120153-857cc45be447 // @grafana/sharing-squad
 	github.com/grafana/gomemcache v0.0.0-20240805133030-fdaf6a95408e // @grafana/grafana-operator-experience-squad
 	github.com/grafana/grafana-aws-sdk v0.30.0 // @grafana/aws-datasources
@@ -131,7 +131,7 @@ require (
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 // @grafana/alerting-backend
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // @grafana/grafana-operator-experience-squad
 	github.com/oapi-codegen/oapi-codegen/v2 v2.3.0 // @grafana/grafana-as-code
-	github.com/oklog/ulid/v2 v2.1.0 // @grafana/identity-access-team
+	github.com/oklog/ulid/v2 v2.1.2 // @grafana/identity-access-team
 	github.com/olekukonko/tablewriter v0.0.5 // @grafana/grafana-backend-group
 	github.com/openfga/api/proto v0.0.0-20240529184453-5b0b4941f3e0 // @grafana/identity-access-team
 	github.com/openfga/language/pkg/go v0.0.0-20240409225820-a53ea2892d6d // @grafana/identity-access-team
@@ -172,15 +172,15 @@ require (
 	go.uber.org/atomic v1.11.0 // @grafana/alerting-backend
 	go.uber.org/goleak v1.3.0 // @grafana/grafana-search-and-storage
 	gocloud.dev v0.39.0 // @grafana/grafana-app-platform-squad
-	golang.org/x/crypto v0.26.0 // @grafana/grafana-backend-group
+	golang.org/x/crypto v0.55.0 // @grafana/grafana-backend-group
 	golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f // @grafana/alerting-backend
-	golang.org/x/mod v0.18.0 // indirect; @grafana/grafana-backend-group
-	golang.org/x/net v0.28.0 // @grafana/oss-big-tent @grafana/partner-datasources
+	golang.org/x/mod v0.38.0 // indirect; @grafana/grafana-backend-group
+	golang.org/x/net v0.58.0 // @grafana/oss-big-tent @grafana/partner-datasources
 	golang.org/x/oauth2 v0.22.0 // @grafana/identity-access-team
-	golang.org/x/sync v0.8.0 // @grafana/alerting-backend
-	golang.org/x/text v0.17.0 // @grafana/grafana-backend-group
+	golang.org/x/sync v0.22.0 // @grafana/alerting-backend
+	golang.org/x/text v0.41.0 // @grafana/grafana-backend-group
 	golang.org/x/time v0.6.0 // @grafana/grafana-backend-group
-	golang.org/x/tools v0.22.0 // @grafana/grafana-as-code
+	golang.org/x/tools v0.48.0 // @grafana/grafana-as-code
 	gonum.org/v1/gonum v0.14.0 // @grafana/observability-metrics
 	google.golang.org/api v0.191.0 // @grafana/grafana-backend-group
 	google.golang.org/grpc v1.65.0 // @grafana/plugins-platform-backend
@@ -279,7 +279,7 @@ require (
 	github.com/go-logr/logr v1.4.2 // indirect; @grafana/grafana-app-platform-squad
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-openapi/analysis v0.23.0 // indirect
-	github.com/go-openapi/errors v0.22.0 // indirect
+	github.com/go-openapi/errors v0.22.8 // indirect
 	github.com/go-openapi/jsonpointer v0.21.0 // indirect
 	github.com/go-openapi/jsonreference v0.21.0 // indirect
 	github.com/go-openapi/spec v0.21.0 // indirect
@@ -432,7 +432,6 @@ require (
 	go.etcd.io/etcd/api/v3 v3.5.14 // indirect
 	go.etcd.io/etcd/client/pkg/v3 v3.5.14 // indirect
 	go.etcd.io/etcd/client/v3 v3.5.14 // indirect
-	go.mongodb.org/mongo-driver v1.16.1 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.53.0 // indirect
 	go.opentelemetry.io/otel/metric v1.29.0 // indirect
@@ -440,8 +439,8 @@ require (
 	go.uber.org/mock v0.4.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // @grafana/identity-access-team
-	golang.org/x/sys v0.24.0 // indirect
-	golang.org/x/term v0.23.0 // indirect
+	golang.org/x/sys v0.47.0 // indirect
+	golang.org/x/term v0.45.0 // indirect
 	golang.org/x/xerrors v0.0.0-20240716161551-93cc26a95ae9 // indirect
 	google.golang.org/genproto v0.0.0-20240812133136-8ffd90a71988 // indirect; @grafana/grafana-backend-group
 	google.golang.org/genproto/googleapis/api v0.0.0-20240822170219-fc7c04adadcd // indirect
@@ -480,9 +479,15 @@ require (
 require (
 	cloud.google.com/go/longrunning v0.5.12 // indirect
 	github.com/at-wat/mqtt-go v0.19.4 // indirect
+	github.com/distribution/reference v0.6.0 // indirect
+	github.com/go-viper/mapstructure/v2 v2.5.0 // indirect
+	github.com/gopherjs/gopherjs v0.0.0-20220221023154-0b2280d3ff96 // indirect
 	github.com/grafana/grafana/pkg/semconv v0.0.0-20240808213237-f4d2e064f435 // indirect
 	github.com/hairyhenderson/go-which v0.2.0 // indirect
 	github.com/iancoleman/orderedmap v0.3.0 // indirect
+	github.com/smartystreets/assertions v1.2.1 // indirect
+	golang.org/x/telemetry v0.0.0-20260708182218-49f421fb7959 // indirect
+	golang.org/x/tools/godoc v0.1.0-deprecated // indirect
 )
 
 // Use fork of crewjam/saml with fixes for some issues until changes get merged into upstream
