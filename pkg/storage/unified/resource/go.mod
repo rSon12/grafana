@@ -13,7 +13,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.29.0
 	gocloud.dev v0.39.0
 	google.golang.org/grpc v1.65.0
-	google.golang.org/protobuf v1.34.2
+	google.golang.org/protobuf v1.36.12
 	k8s.io/apimachinery v0.31.0
 )
 

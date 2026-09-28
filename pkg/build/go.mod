@@ -23,7 +23,7 @@ require (
 	github.com/docker/docker v26.0.2+incompatible // @grafana/grafana-release-guild
 	github.com/drone/drone-cli v1.6.1 // @grafana/grafana-release-guild
 	github.com/gogo/protobuf v1.3.2 // indirect; @grafana/alerting-backend
-	github.com/google/go-cmp v0.6.0 // @grafana/grafana-backend-group
+	github.com/google/go-cmp v0.7.0 // @grafana/grafana-backend-group
 	github.com/google/go-github v17.0.0+incompatible // @grafana/grafana-release-guild
 	github.com/google/go-github/v45 v45.2.0 // @grafana/grafana-release-guild
 	github.com/google/uuid v1.6.0 // indirect; @grafana/grafana-backend-group
@@ -46,7 +46,7 @@ require (
 	golang.org/x/tools v0.22.0 // indirect; @grafana/grafana-as-code
 	google.golang.org/api v0.191.0 // @grafana/grafana-backend-group
 	google.golang.org/grpc v1.65.0 // indirect; @grafana/plugins-platform-backend
-	google.golang.org/protobuf v1.34.2 // indirect; @grafana/plugins-platform-backend
+	google.golang.org/protobuf v1.36.12 // indirect; @grafana/plugins-platform-backend
 	gopkg.in/yaml.v3 v3.0.1 // @grafana/alerting-backend
 )
 
