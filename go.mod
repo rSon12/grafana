@@ -1,6 +1,6 @@
 module github.com/grafana/grafana
 
-go 1.23.0
+go 1.24
 
 // contains openapi encoder fixes. remove ASAP
 replace cuelang.org/go => github.com/grafana/cue v0.0.0-20230926092038-971951014e3f // @grafana/grafana-as-code
@@ -81,7 +81,7 @@ require (
 	github.com/grafana/cuetsy v0.1.11 // @grafana/grafana-as-code
 	github.com/grafana/dataplane/examples v0.0.1 // @grafana/observability-metrics
 	github.com/grafana/dataplane/sdata v0.0.9 // @grafana/observability-metrics
-	github.com/grafana/dskit v0.0.0-20240311184239-73feada6c0d7 // @grafana/grafana-backend-group
+	github.com/grafana/dskit v0.0.0-20240805174438-dfa83b4ed2d3 // @grafana/grafana-backend-group
 	github.com/grafana/gofpdf v0.0.0-20231002120153-857cc45be447 // @grafana/sharing-squad
 	github.com/grafana/gomemcache v0.0.0-20240805133030-fdaf6a95408e // @grafana/grafana-operator-experience-squad
 	github.com/grafana/grafana-aws-sdk v0.30.0 // @grafana/aws-datasources
@@ -105,7 +105,7 @@ require (
 	github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.1.0 // @grafana/grafana-backend-group
 	github.com/hashicorp/go-hclog v1.6.3 // @grafana/plugins-platform-backend
 	github.com/hashicorp/go-multierror v1.1.1 // @grafana/alerting-squad
-	github.com/hashicorp/go-plugin v1.6.1 // @grafana/plugins-platform-backend
+	github.com/hashicorp/go-plugin v1.8.0 // @grafana/plugins-platform-backend
 	github.com/hashicorp/go-version v1.6.0 // @grafana/grafana-backend-group
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // @grafana/alerting-backend
 	github.com/hashicorp/hcl/v2 v2.17.0 // @grafana/alerting-backend
@@ -172,19 +172,19 @@ require (
 	go.uber.org/atomic v1.11.0 // @grafana/alerting-backend
 	go.uber.org/goleak v1.3.0 // @grafana/grafana-search-and-storage
 	gocloud.dev v0.39.0 // @grafana/grafana-app-platform-squad
-	golang.org/x/crypto v0.26.0 // @grafana/grafana-backend-group
+	golang.org/x/crypto v0.36.0 // @grafana/grafana-backend-group
 	golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f // @grafana/alerting-backend
 	golang.org/x/mod v0.18.0 // indirect; @grafana/grafana-backend-group
-	golang.org/x/net v0.28.0 // @grafana/oss-big-tent @grafana/partner-datasources
+	golang.org/x/net v0.38.0 // @grafana/oss-big-tent @grafana/partner-datasources
 	golang.org/x/oauth2 v0.22.0 // @grafana/identity-access-team
-	golang.org/x/sync v0.8.0 // @grafana/alerting-backend
-	golang.org/x/text v0.17.0 // @grafana/grafana-backend-group
+	golang.org/x/sync v0.12.0 // @grafana/alerting-backend
+	golang.org/x/text v0.23.0 // @grafana/grafana-backend-group
 	golang.org/x/time v0.6.0 // @grafana/grafana-backend-group
 	golang.org/x/tools v0.22.0 // @grafana/grafana-as-code
 	gonum.org/v1/gonum v0.14.0 // @grafana/observability-metrics
 	google.golang.org/api v0.191.0 // @grafana/grafana-backend-group
 	google.golang.org/grpc v1.65.0 // @grafana/plugins-platform-backend
-	google.golang.org/protobuf v1.34.2 // @grafana/plugins-platform-backend
+	google.golang.org/protobuf v1.36.6 // @grafana/plugins-platform-backend
 	gopkg.in/ini.v1 v1.67.0 // @grafana/alerting-backend
 	gopkg.in/mail.v2 v2.3.1 // @grafana/grafana-backend-group
 	gopkg.in/yaml.v3 v3.0.1 // @grafana/alerting-backend
@@ -247,7 +247,7 @@ require (
 	github.com/blevesearch/snowballstem v0.9.0 // indirect
 	github.com/blevesearch/vellum v1.0.7 // indirect
 	github.com/blugelabs/ice v1.0.0 // indirect
-	github.com/bufbuild/protocompile v0.4.0 // indirect
+	github.com/bufbuild/protocompile v0.14.1 // indirect
 	github.com/buger/jsonparser v1.1.1 // indirect
 	github.com/caio/go-tdigest v3.1.0+incompatible // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
@@ -318,7 +318,7 @@ require (
 	github.com/hashicorp/golang-lru v1.0.2 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/hashicorp/memberlist v0.5.0 // indirect
-	github.com/hashicorp/yamux v0.1.1 // indirect
+	github.com/hashicorp/yamux v0.1.2 // indirect
 	github.com/igm/sockjs-go/v3 v3.0.2 // indirect
 	github.com/imdario/mergo v0.3.16 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
@@ -336,7 +336,7 @@ require (
 	github.com/jcmturner/rpc/v2 v2.0.3 // indirect
 	github.com/jeremywohl/flatten v1.0.1 // @grafana/grafana-app-platform-squad
 	github.com/jessevdk/go-flags v1.5.0 // indirect
-	github.com/jhump/protoreflect v1.15.1 // indirect
+	github.com/jhump/protoreflect v1.17.0 // indirect
 	github.com/jonboulle/clockwork v0.4.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/jpillora/backoff v1.0.0 // indirect
@@ -362,7 +362,6 @@ require (
 	github.com/minio/c2goasm v0.0.0-20190812172519-36a3d3bbc4f3 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
-	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/mithrandie/csvq v1.18.1 // indirect
@@ -440,8 +439,8 @@ require (
 	go.uber.org/mock v0.4.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // @grafana/identity-access-team
-	golang.org/x/sys v0.24.0 // indirect
-	golang.org/x/term v0.23.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/term v0.30.0 // indirect
 	golang.org/x/xerrors v0.0.0-20240716161551-93cc26a95ae9 // indirect
 	google.golang.org/genproto v0.0.0-20240812133136-8ffd90a71988 // indirect; @grafana/grafana-backend-group
 	google.golang.org/genproto/googleapis/api v0.0.0-20240822170219-fc7c04adadcd // indirect
@@ -480,9 +479,12 @@ require (
 require (
 	cloud.google.com/go/longrunning v0.5.12 // indirect
 	github.com/at-wat/mqtt-go v0.19.4 // indirect
+	github.com/distribution/reference v0.6.0 // indirect
+	github.com/gopherjs/gopherjs v0.0.0-20220221023154-0b2280d3ff96 // indirect
 	github.com/grafana/grafana/pkg/semconv v0.0.0-20240808213237-f4d2e064f435 // indirect
 	github.com/hairyhenderson/go-which v0.2.0 // indirect
 	github.com/iancoleman/orderedmap v0.3.0 // indirect
+	github.com/smartystreets/assertions v1.2.1 // indirect
 )
 
 // Use fork of crewjam/saml with fixes for some issues until changes get merged into upstream
